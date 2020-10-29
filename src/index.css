@@ -1,0 +1,675 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?bw2q9l');
+  src:  url('../fonts/icomoon.eot?bw2q9l#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?bw2q9l') format('truetype'),
+    url('../fonts/icomoon.woff?bw2q9l') format('woff'),
+    url('../fonts/icomoon.svg?bw2q9l#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-linkedin:before {
+  content: "\e901";
+}
+.icon-github:before {
+  content: "\e902";
+}
+.icon-behance:before {
+  content: "\e903";
+}
+.icon-dribbble:before {
+  content: "\e905";
+}
+.icon-twitter:before {
+  content: "\e906";
+}
+.icon-telegram:before {
+  content: "\e907";
+}
+.icon-whatsapp:before {
+  content: "\e908";
+}
+.icon-instagram:before {
+  content: "\e909";
+}
+.icon-facebook:before {
+  content: "\e90a";
+  background-size: 50 50px;
+}
+.icon-mail:before {
+  content: "\e90b";
+  position: absolute;
+  color: black;
+  z-index: 2;
+  font-size: 1.5em;
+  line-height: 1.5em;
+  padding: 0 0 0 5px;
+}
+.icon-share:before {
+  content: "\e90c";
+}
+.icon-menu:before {
+  content: "\e900";
+}
+
+
+body{
+  font-family: 'Lato';
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Bree Serif';
+  font-weight: 300;
+}
+
+h1{
+  font-size: 40px;
+  line-height: 120%;
+  letter-spacing: 0px;
+  color: white;
+  text-align: right;
+  margin: 0px 10px 0px 0px;
+  width: 60%;
+}
+
+h2{
+  margin: 30px;
+  color: #026fff;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 24px;
+}
+
+h1 strong{
+  color: #026fff;
+}
+
+figure{
+  margin: 0px;
+}
+
+ol,
+ul{
+  margin: 0px;
+  padding: 0px;
+  list-style: none  ;
+}
+
+
+.header {
+  background-color: #1b2127;
+  color: white;
+  margin: 0;
+/*   margin-bottom: 5px; */
+  display: flex;
+  justify-content: space-between;
+  height: 125px;
+  flex-wrap: wrap;
+}
+
+.header ol {
+  display: flex;
+  height: inherit;
+  align-items: center;
+}
+
+.header ol li {
+  height: inherit;
+}
+
+.header a {
+  color: white;
+  text-decoration: none;
+  height: inherit;
+  display: flex;
+  align-items: center;
+  padding : 0 10px;
+}
+
+.menu{
+  height: inherit;
+}
+
+.logo {
+  height: 125px;
+  margin: 0px;
+  padding: 0px;
+}
+
+.logo-img {
+  height: 125px;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.hero {
+  /*   background-image: url(../images/Curriculum-alterno.jpg); */
+  /* background-size: 386.36px 500px; */
+  /* background-repeat: no-repeat;
+  background-position-x: right; */
+  height: 300px;
+  background-color: #1b2127;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+/* .industrial{
+  background: red;
+  position: relative;
+  bottom: -1em;
+  left: -4.7em
+}
+
+.apasionado{
+  position: relative;
+  left: 5em;
+  bottom: .5em
+} */
+
+.hero-img{
+  height: inherit;
+  object-fit: cover;
+  width: 40%;
+}
+
+/* .hero-box {
+  width: 60%;
+} */
+
+.portfolio{
+  background: white;
+  padding: 20px;
+}
+
+.project{
+/*  border-color: red;
+  border-width: 15px;
+  border-style: solid; */
+  border: 1px solid gray;
+  border-radius: 5px;
+ /*  border-bottom-right-radius: 50px ; */
+  margin: 10px;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: white;
+  flex-wrap: wrap;
+}
+
+.project-url,
+.project-date {
+  margin: 10px 0px;
+}
+.project-title {
+  font-size: 24;
+  margin: 10px 0px 0px 0px;
+}
+
+.project-design {
+  margin: 0px;
+  font-size: 14;
+}
+
+.project-description {
+  font-size: 16;
+}
+
+.project-description a {
+  font-size: 14;
+}
+
+.project-detail{
+  width: 50%;
+}
+
+
+.project-imageWrapper{
+  width: 50%;
+  text-align: center;
+}
+
+.project-imageWrapper img {
+  max-width: 100%;
+}
+
+.youtube-video {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.flexible-video {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+
+/* .flexbox{
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: space-evenly;
+}
+
+.box{
+  border: 1px solid blue;
+  padding: 3px;
+  margin: 15px;
+  /* display: flex;
+  flex-shrink: 0;
+} */
+
+.experience{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.job1{
+  margin: 1%;
+  width: 48%;
+  border-radius: 10px;
+  overflow: hidden;
+  flex-shrink: 0;
+  background-color: #f4fbff;
+}
+
+.job1 img{
+  width: 480;
+  height: 200;
+  object-fit: cover;
+}
+
+.job1-detail {
+  margin: 20px 40px;
+  margin-top: -40px;
+  background-color: white;
+  padding: 10px;
+  position: relative;
+  text-align: center;
+}
+
+.job1-description{
+  text-align: left;
+}
+
+.job1-url{
+  border: 1px solid;
+  padding: 5px 20px;
+  text-decoration: none;
+  color: #026fff;
+  border-radius: 5px;
+}
+
+.trips {
+/*   border: 1px solid red; */
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.trips-video{
+  width: 100%;
+  height: auto;
+}
+
+.contact{
+  background-color: #026fff;
+  color: white;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+.social{
+  align-items: center;
+  display: flex;
+
+}
+
+.social i {
+  font-size: 50px;
+  display: inline-block;
+  align-items: center;
+  background-size: 50px 50px;
+  margin: 10px;
+}
+.social a{
+  color: white;
+}
+
+/* .social link.twitter{
+  background-image: url('../images/twitter.png');
+}
+
+.social-link.facebook{
+  background-image: url('../images/fb.png');
+  background-size: 55px 55px;
+  width: 59px;
+  height: 55px;
+}
+
+.social-link.instagram{
+  background-image: url('../images/insta.png'); 
+}*/
+
+.data{
+  height: auto;
+}
+
+.form-email h3{
+  text-align: center;
+  justify-content: center;
+  margin: 1em 0 .5em 0;
+}
+
+.form-email input{
+/*   background-size: 20px 20px; */
+  background-repeat: no-repeat;
+  background-position-x: 10px;
+  background-position-y: center;
+  padding: 10px 20px 10px 35px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  position: relative;
+}
+
+.form-email button{
+  display: block;
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  padding: 10px 0px;
+  border-radius: 5px;
+  width: 100px;
+  margin: 10px;
+  justify-content: center;
+}
+
+.footer{
+  color: white;
+  background-color: #1b2127;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0px 20px 0px 20px;
+  flex-wrap: wrap;
+}
+
+.footer img{
+  vertical-align: middle;
+}
+
+.footer a {
+  color: white;
+}
+
+.container{
+/*   border: 1px solid red; */
+  height: inherit;
+  max-width: 1000px;
+  display: inherit;
+  justify-content: inherit;
+  align-items: inherit;
+  margin: 0 auto;
+  flex-wrap: inherit;
+  flex: 1;
+}
+
+.burger-button{
+  background-color:rgba(0, 0, 0, 20%);
+  display: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  position: fixed;
+  left: 5px;
+  top: 5px;
+  line-height: 40px;
+  text-align: center;
+  color: white;
+  z-index: 4;
+}
+
+@media screen and (max-width: 1023px) {
+
+  h1 {
+    font-size: 2em;
+    z-index: 2;
+    text-align: initial;
+    margin: 0;
+  }
+
+  .hero {
+    height: auto;
+    position: relative;
+    overflow: hidden;
+    padding: 2em;
+  }
+  .hero-img {
+    position: absolute;
+    z-index: 1;
+/*     top: 0;
+    right: 0; */
+    left: 0;
+/*     bottom: 0; */
+    width: 100%;
+  }
+
+  .portfolio{
+    padding: 0;
+    margin: 0;
+  }
+  .experience{
+    margin: 10px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .logo{
+   width: 50%; 
+  }
+}
+
+@media screen and (max-width: 767px) {
+/*   body{
+    width: fit-content;
+  } */
+  h1 {
+    width: 100%;
+  }
+
+  .burger-button{
+    display: block;
+  }
+
+  .header {
+    display: block;
+    height: auto;
+  }
+  .header ol {
+    display: inline;
+  }
+  .header ol li {
+    height: 50px;
+  }
+  .header a {
+    justify-content: center;
+    height: 40px;
+    font-size: 2em;
+    margin-bottom: .5em;
+  }
+  .menu{
+    background:rgba(2, 111, 255, .8);
+    position: fixed;
+    z-index: 3;
+    left: -100vw;
+    top: 0;
+    bottom: 0;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    transition: .3s;
+  }
+  .menu.is-active{
+    left: 0;
+  }
+  .logo{
+    width: auto;
+    text-align: center;
+  }
+
+  .project{
+    display: block;
+    align-items: center;
+  }
+  .project-imageWrapper{
+    width: auto;
+  }
+  .project-detail{
+    width: auto;
+    font-size: 18px;
+    margin: .3em 0;
+    text-align: left;
+  }
+  .project-url,
+  .project-date {
+    margin: .3em 0;
+  }
+  .project-title{
+    font-size: 1.5em;
+    margin: .3em 0 0 0;
+  }
+  .project-design{
+    font-size: .7em;
+  }
+  .project-date{
+    font-size: 1em;
+  }
+  .project-url{
+    font-size: 1em;
+  }
+  .project-description{
+    font-size: 1.2em;
+  }
+
+  .job1{
+    width: auto;
+    flex-shrink: initial;
+  }
+  .job1 img{
+    width: 100%;
+  }
+  .job1-title{
+    margin: 1em 0 0 0;
+  }
+  .job1-date{
+    margin: 1em;
+  }
+  .job1-description{
+    margin: 1em
+  }
+}  
+
+@media screen and (max-width: 480px) {
+  h1{
+    font-size: 1.5em;
+  }
+
+  h2 {
+    font-size: 1em;
+    margin: 20px 10 20 10;
+  }
+  
+  .hero{
+    flex-wrap: wrap;
+    position: relative;
+    height: auto;
+    padding: 1.5em;
+  }
+
+  .project-description{
+    font-size: 1em;
+  }
+  .job1-detail{
+    margin: -2em .5em .5em .5em;
+    padding: 1em 1em;
+  }
+
+  .contact{
+    height: auto;
+    padding: 1em 0;
+    display: block;
+    text-align: center;
+  }
+  .social{
+    display: block;
+  }
+  .social i {
+    font-size: 30px
+  }
+  .form-email button{
+    margin: 1.5em auto;
+  }
+
+  .social-link{
+    margin: 0px 10 10 10;
+  }
+  .footer{
+    display: block;
+    text-align: center;
+    border: 1px solid transparent;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  h1 {
+    font-size: 1em;
+  }
+
+  .project-detail{
+    width: auto;
+    font-size: 14px;
+  }
+  
+  .footer{
+    font-size: .8em;
+  }
+  .footer img{
+    height: 3em;
+  }
+}
