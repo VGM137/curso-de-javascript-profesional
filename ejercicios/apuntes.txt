@@ -1,0 +1,23 @@
+El AST o Abstract Sintax Tree es una representación de árbol de la estructura sintáctica simplificada del código fuente escrito en algún lenguaje de programación.
+
+Facilita el análisis de código
+
+Los engine de JS corren el código fuente por un parser que genera el AST, este se compila a bytecode mientras que un interprete lee el código, y después, se ejecuta.
+Eventualmente tiene suficiente información para ser optimizado a machine code y se remplaza el código base.
+
+Un parser descompone el código en tokens para entender las palabras clave, los operadores, los tipos de valor, etc.
+  El Parcer de V8 puede generar un:
+   1.- Eager Parser: Ecuentra errores de sintaxis; Crea AST; Construye scopes
+   o un
+   2.-Lazy parser: Es el doble de rápido que el anterior; no crea AST; construye los scopes parcialmente.
+
+Bytecode vs MachineCode
+  Bytecode es código parecido a assembley pero opera sobre la virtual machine en lugar de un procesador
+
+  MachineCode es código binario y manda instrucciones específicas a una arquitectura o un procesador
+
+Motores de optimización
+Chrome = V8
+Firefox = SpideMonkey
+Edge = Chakra
+Safari = JavaScriptCore
