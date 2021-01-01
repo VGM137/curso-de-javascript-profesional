@@ -27,7 +27,6 @@ const player = new MediaPlayer({ el: video, plugins: [new AutoPlay()] })
 buttonPlay.onclick = () => player.togglePlay()
 buttonAudio.onclick = () => player.toggleAudio()
 
-
 //Responsive shit
 const menu = document.querySelector(".menu")
 const burgerButton = document.querySelector("#burger-menu")
